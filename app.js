@@ -1,12 +1,21 @@
 let express = require('express');
 let app = express();
+let morgan = require('morgan');
+let bodyParser = require('body-parser');
 let dotenv = require('dotenv');
+let cors = require("cors")
 dotenv.config();
 let port = process.env.PORT || 9870;
 let mongo = require('mongodb');
+const nodemon = require('nodemon');
 let mongoClient = mongo.MongoClient;
-let mongoURL = process.env.MongoLiveURL;
+let mongoURL = "mongodb+srv://local:test123@mongodbapp.fk1a8.mongodb.net/?retryWrites=true&w=majority";
 let db;
+
+app.use(morgan("common"))
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(cors());
 
 app.get('/',(req,res)=>{
     res.send('Hii from Express')
@@ -81,9 +90,9 @@ app.get('/categories_to_bag',(req,res)=>{
 })
 
 
-MongoClient.connect( mongoURL ,(err,client)=>{
+mongoClient.connect( mongoURL ,(err,client)=>{
     if(err) console.log("Error while Connecting");
-    db = client.db('mongoDBApp');
+    db = client.db("mongoDBApp");
     app.listen(port,() =>{
         console.log(`listening on port ${port}`)
   })
