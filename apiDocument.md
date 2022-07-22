@@ -22,21 +22,3 @@ https://app-api7.herokuapp.com/women_category_price
 
 # product wrt category & ratings
 https://app-api7.herokuapp.com/men_category
-# Sort on basis of cost 
-
-Page 3 
-# Menu 
-# Reviews
-# details of product
-
-Page 4 
-# Menu details 
-# order placed
-# cart 
- 
-Page 5
-# list of order placed
-# list of order placed wrt email
-# list of order placed wrt phone number
-# update order details with payment
-# Payment options
