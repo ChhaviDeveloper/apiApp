@@ -4,7 +4,7 @@ let dotenv = require('dotenv');
 dotenv.config();
 let port = process.env.PORT || 9870;
 let mongo = require('mongodb');
-let MongoClient = mongo.MongoClient;
+let mongoClient = mongo.MongoClient;
 let mongoURL = process.env.MongoLiveURL;
 let db;
 
