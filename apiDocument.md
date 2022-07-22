@@ -1,27 +1,27 @@
 //Myntra HomePage
 Page 1
 # choose category
-http://localhost:7800/category
+https://app-api7.herokuapp.com/category
 # chose product wrt to category
-http://localhost:7800/products
+https://app-api7.herokuapp.com/products
 # deal of the day 
-http://localhost:7800/deal_of_day
+https://app-api7.herokuapp.com/deal_of_day
 # top pick 
-http://localhost:7800/top_pick
+https://app-api7.herokuapp.com/top_pick
 # category to bag
-http://localhost:7800/categories_to_bag
+https://app-api7.herokuapp.com/categories_to_bag
 # beauty and grooming
-http://localhost:7800/beauty_grooming
+https://app-api7.herokuapp.com/beauty_grooming
 
 
 Page 2
 # products wrt category
-http://localhost:7800/kids_category
+https://app-api7.herokuapp.com/kids_category
 # product wrt category & cost 
-http://localhost:7800/women_category_price
+https://app-api7.herokuapp.com/women_category_price
 
 # product wrt category & ratings
-http://localhost:7800/men_category
+https://app-api7.herokuapp.com/men_category
 # Sort on basis of cost 
 
 Page 3 
