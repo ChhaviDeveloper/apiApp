@@ -13,12 +13,12 @@ http://localhost:7800/categories_to_bag
 # beauty and grooming
 http://localhost:7800/beauty_grooming
 
+
 Page 2
 # products wrt category
 http://localhost:7800/kids_category
 # product wrt category & cost 
 http://localhost:7800/women_category_price
-
 
 # product wrt category & ratings
 http://localhost:7800/men_category
